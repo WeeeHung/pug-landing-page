@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded">
+    <title>Puggies</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class="for-vid" style="overflow: hidden;" >
+      <video autoplay muted loop id="myVideo" style=" margin-left: -25%; overflow: hidden;">
+        <source src="images/bg.mp4" type="video/mp4"> 
+      </video>
+    <div id= "navbar">
+        <a class="active1" href="#home"> VELCRO </a>
+        <img class="img1" src="images/main_icon.jpg">
+        <div class="topnav-right">
+            <a href="#contact">Contact</a>
+            <a href="#search">Search</a>
+            <a href="#about">About</a>
+        </div>
+    </div>  
+    <!-- webpage intro -->
+    <div class="hero">
+      <div class="hero-text">
+        <br>
+        <h1 id="demo"></h1>
+        <p > Pugs are super special creatures who will change your life for the better, although I’m biased of course.</p>
+        <script>
+          var i = 0;
+          var txt = 'So you’re thinking of getting a pug?... Congratulations!';
+          var speed = 40;
+    
+          function typeWriter() {
+            if (i < txt.length) {
+              document.getElementById("demo").innerHTML += txt.charAt(i);
+              i++;
+              setTimeout(typeWriter, speed);
+            }
+          }
+          typeWriter();
+        </script>
+        <br>
+        <button class="button1" onclick="window.location.href='#more'" style="font-family: 'Unbounded', sans-serif;"><span>&nbsp find out more &nbsp</span></button>
+        </div>
+      </div> 
+    </div>
+    <div class="sticky" id="more" style="height: 3%; background-color: #983351; color: #bae387; text-align: center;"> 
+      VELCRO
+    </div>
+      <div class="banner">
+        <!-- slide show to showcase the pugs -->
+        <div class= "slideshow">
+        <h1> Favourites </h1> 
+        <p style="text-align: center;"> hover over the pugs and bring light to their world</p>
+          <div class="row">
+            <div class="column">
+              <div class="content">
+                <img src="images/slide1.jpg" alt="Mountains" style="width:100%">
+                <h3>Nugget</h3>
+                <p>Nugget is an effervescent, excitable and friendly boy who can sometimes get over excited. 
+                  He enjoys his walks but would need to be guided on leash.  
+                  Nugget is extremely perceptive and knows how to read your mood. 
+                  He will only seek attention from you when he knows you are free.</p>
+          
+                <p>History: Nugget was rescued as puppy.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="images/slide2.jpg" alt="Lights" style="width:100%">
+                <h3>Karen</h3>
+                <p>Karen is a sweet and very affectionate girl who loves everyone and is good with other dogs. 
+                  Call her and she will walk up to you with a smile plastered on her face. 
+                  Give her a scratch on her head and you've got yourself a shadow who will follow you around. 
+                </p>
+                <p>History: Karen was born at Tuas South, one out of a litter of four.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="images/slide3.jpg" alt="Nature" style="width:100%">
+                <h3>Bruno</h3>
+                <p> Bruno is a very handsome boy and looks like he could be a rottweiler cross. 
+                  He possesses a happy and friendly nature and an extremely waggy tail! 
+                  He is excellent indoors and is careful around furniture 
+                  but he needs to know what is considered a toy and what is not!</p>
+                  <p> History: Bruno was found abandoned in Punggol with heart worm and tick fever. </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="images/slide4.jpeg" alt="Mountains" style="width:100%">
+                <h3>Dinky</h3>
+                <p>Dinky is a happy-go-lucky dog who is eager to play with the humans he's familiar with. 
+                  He knows his way into people's hearts, frequently asking for a good belly rub. 
+                  He walks well on leash, but can be cheeky with inexperienced handlers. </p>
+                  <p>History: Dinky was rescued from Tuas when he was a puppy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class = "sticky2" style="height: 3%; background-color: #bae387; color: #983351; text-align: center;">
+      DOG
+    </div>
+    <div class="banner">
+      <div class="last-section">
+        <br>
+        <br>
+        <div class="slideshow-container">
+
+          <div class="mySlides">
+            <q>I think they’re just the cutest d*** things! LOL! To be serious, they really ARE loving little dogs</q>
+            <p class="author">- Julia</p>
+          </div>
+          
+          <div class="mySlides">
+            <q>Very quick-minded and wanting to please. This is a dog that you would NEVER have to worry about around children.</q>
+            <p class="author">- Ernest Hemingway</p>
+          </div>
+          
+          <div class="mySlides">
+            <q>He tend to be very playful, gentle, and affectionate towards children. He is also observant, smart, and a quick learner..</q>
+            <p class="author">- Edison</p>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+        </div>
+          
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+        <div class="final-container">
+          <h1> get your pug at <span style="color: #bae;">VELCRO</span> now! </h1>
+          <div class="vertical-center">
+          <button class="final-button">&nbsp VELCRO &nbsp</button>
+        </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

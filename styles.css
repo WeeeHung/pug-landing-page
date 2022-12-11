@@ -1,0 +1,402 @@
+* {box-sizing:border-box}
+/* Add a black background color to the top navigation */
+
+
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth; 
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    z-index: 2;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    z-index: 2;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #d46a6a; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#ffaaaa; 
+  }
+
+.for-vid {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow:hidden;
+  display:block;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  min-width: 80%;
+  min-height: 100vh;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
+  background-size: 500% 500%;
+  position: relative;
+  animation: animate 7.5s ease-in-out infinite;
+  display: inline-block;
+  /* justify-content: center;
+  align-items: center; */
+  
+}
+
+@keyframes animate{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+#navbar {
+    background-color: #6f256f;
+    /* overflow: hidden; */
+    width: 100%;
+    margin-top: 2%;
+    max-height:6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.img1 {
+  display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+  /* max-width: 230px;
+  height: auto;
+  width: auto\9; */
+  position: absolute;
+  left: 15%;
+  float: right;
+  margin: 0%;
+}
+
+/* Style the links inside the navigation bar */
+#navbar a {
+  float: left;
+  color: #f2f2f2;
+  background-color: #be5f7c;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 6vw;
+  transition: 0.5s;
+}
+
+
+/* Change the color of links on hover */
+#navbar a:hover {
+  background-color: #91a437;
+  color: black;
+  width: fit-content;
+}
+
+.topnav-right a {
+  transition: 0.5s;
+  background-color: #ddd;
+  color: black;
+  text-transform: uppercase;
+}
+
+/* Add a color to the active/current link */
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  float: right;
+}
+
+/* webpage intro -------------------------------- */
+/* The hero image */
+  
+  /* Place text in the middle of the image */
+.hero {
+    position: relative;
+    height: 92%;
+}
+
+.hero-text {
+  text-align: center;
+  width: 100vw;
+  font-size: x-large;
+  position: relative;
+  top: 35%;
+  color: white;
+  background-color: rgba(14,14,14,0.5);
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.sticky2 {
+  position: sticky;
+  top: 3%;
+  z-index: 2;
+}
+
+body {
+  font-family: "Unbounded", sans-serif;
+}
+.button1 {
+  border-radius: 4px;
+  background-color: #609732;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: fit-content;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 10%;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\1f643';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* intro the pugs ------------------------------------ */
+    /* ------------------------------------ */
+.slideshow h1 {
+  font-weight: bolder;
+  font-size: 7vh;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 7vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 8px;
+  
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  height: max-content;
+}
+
+.column img {
+  filter: grayscale(100%);
+}
+
+.column img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* --------------------------------------------------------- */
+
+
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 110px;
+  text-align: center;
+  font-size: large;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.final-container h1 {
+  font-size: 11vh;
+  color: rgb(212, 106, 106);
+  background-color: rgba(14,14,14,0.5);
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.final-button {
+  background-color: #6f256f;
+  color: white;
+  font-size: 11vh;
+  font-family: "Unbounded", sans-serif;
+  border-radius: 10px;
+  border: #d4ee9f;
+  transition: 0.5s;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.final-button:hover {
+  color: #b01515;
+  background-color: #d4ee9f;
+  box-shadow: 0 0 5px #d4ee9f, 
+              0 0 25px #d4ee9f,
+              0 0 50px #d4ee9f,
+              0 0 100px #d4ee9f;
+  cursor: pointer;
+}
