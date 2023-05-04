@@ -1,4 +1,4 @@
-# Landing-page
+# Pug landing-page
 
 
 The website is for pug adoption in general.
